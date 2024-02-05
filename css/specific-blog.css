@@ -1,0 +1,13 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
