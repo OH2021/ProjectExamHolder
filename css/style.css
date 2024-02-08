@@ -7,9 +7,20 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+    margin-top: 100px; /* Adjust the margin-top as needed */
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+    margin-right: 490px; /* Adjust the margin-left to move the header to the left */
+}
+
+
+
 #latest-posts {
     width: 45%; /* Adjusted width */
-    margin: 250px auto 20px;
+    margin: 50px auto 20px;
 }
 
 .swiper-slide {
@@ -61,10 +72,33 @@ body {
     margin: 5px;
 }
 
+#post-container {
+    margin-bottom: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#next-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-button:hover {
+    background-color: #777;
+}
+
+
 /* Mobile layout styles */
 @media screen and (max-width: 768px) {
-    .swiper-slide {
-        width: 100%;
-        margin: 0 auto;
+    h1 {
+        margin-right: 5%; /* Adjust margin-right for smaller screens */
     }
 }

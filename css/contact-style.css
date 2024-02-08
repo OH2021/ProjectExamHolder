@@ -21,7 +21,7 @@ form {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 100px; /* Adjusted margin for better separation */
+    margin-bottom: 100px;
 }
 
 label {
@@ -79,6 +79,6 @@ button {
 /* Responsive Styles */
 @media (max-width: 600px) {
     form {
-        margin-bottom: 50px; /* Adjust for smaller screens */
+        margin-bottom: 50px;
     }
 }
