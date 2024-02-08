@@ -10,16 +10,28 @@ body {
 h1 {
     font-size: 24px;
     font-weight: bold;
-    color: #333; /* Adjust the color as needed */
-    margin-top: 100px; /* Adjust the margin-top as needed */
-    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
-    margin-right: 490px; /* Adjust the margin-left to move the header to the left */
+    color: #333;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: 490px;
 }
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
 
+.paragraph {
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
 
 #latest-posts {
-    width: 45%; /* Adjusted width */
+    width: 45%;
     margin: 50px auto 20px;
 }
 
@@ -99,6 +111,6 @@ h1 {
 /* Mobile layout styles */
 @media screen and (max-width: 768px) {
     h1 {
-        margin-right: 5%; /* Adjust margin-right for smaller screens */
+        margin-right: 5%;
     }
 }

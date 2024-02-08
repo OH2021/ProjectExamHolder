@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
             swiperWrapper.appendChild(postElement);
         }
 
-        // Initialize Swiper after adding slides
         swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 20,
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         });
 
-        // Add event listener for the "Read More" buttons
         document.querySelectorAll('.read-more-button').forEach(button => {
             button.addEventListener('click', goToBlogPage);
         });
@@ -52,6 +50,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = `specific-blog.html?id=${postId}`;
     }
 
-    // Fetch initial posts
     fetchPosts();
 });

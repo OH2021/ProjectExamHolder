@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Fetch all posts
     const fetchPromises = [
         fetchPosts('https://food-blog.fl-power.no/wp-json/wp/v2/posts?page=1'),
         fetchPosts('https://food-blog.fl-power.no/wp-json/wp/v2/posts?page=2')
@@ -7,17 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     Promise.all(fetchPromises)
         .then(responses => {
-            console.log(responses); // Log responses for inspection
+            console.log(responses);
             return Promise.all(responses.map(response => response.json()));
         })
         .then(posts => {
-            console.log(posts); // Log posts for inspection
-            const allPosts = posts.flat(); // Flatten the array of posts
+            console.log(posts);
+            const allPosts = posts.flat();
 
-            // Sort the posts by ID in descending order
             const sortedPosts = allPosts.sort((a, b) => b.id - a.id);
 
-            // Render the sorted posts on the page
             renderPosts(sortedPosts);
         })
         .catch(error => {
@@ -30,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                return response; // Return response object
+                return response;
             });
     }
 
