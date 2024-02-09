@@ -7,6 +7,10 @@ body {
     align-items: center;
 }
 
+.menu-container {
+    margin-top: 20px;
+}
+
 h1 {
     font-size: 24px;
     font-weight: bold;
@@ -16,23 +20,40 @@ h1 {
     margin-right: 490px;
 }
 
+.nav-buttons {
+    display: flex;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+    margin: 0;
 }
 
 .paragraph {
     max-width: 600px;
     margin-bottom: 20px;
     text-align: left;
-    display: inline-block;
 }
 
 #latest-posts {
-    width: 45%;
+    width: 35%;
+    max-width: 800px;
     margin: 50px auto 20px;
+    padding: 20px;
 }
 
 .swiper-slide {
@@ -50,6 +71,10 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .read-more-button {
@@ -70,7 +95,7 @@ h1 {
     color: white;
     border: 1px solid #333;
     border-radius: 5px;
-    margin: 5px; 
+    margin: 5px;
 }
 
 .active-button {
@@ -84,14 +109,54 @@ h1 {
     margin: 5px;
 }
 
+#blog-post-content {
+    margin-bottom: 20px;
+    padding: 20px; /* Added padding */
+    width: 80%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 #post-container {
     margin-bottom: 20px;
+    width: 80%; /* Adjusted width */
+    max-width: 800px; /* Added max-width for better responsiveness */
 }
 
 .post {
     border: 1px solid #ccc;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
+
+.post h2 {
+    font-size: 24px;
     margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.read-more-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    background-color: #45a049;
 }
 
 #next-button {
@@ -107,8 +172,7 @@ h1 {
     background-color: #777;
 }
 
-
-/* Mobile layout styles */
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     h1 {
         margin-right: 5%;

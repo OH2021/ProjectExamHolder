@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function fetchPosts() {
         try {
-            const response = await fetch('https://food-blog.fl-power.no/wp-json/wp/v2/posts?per_page=4&_embed');
+            const response = await fetch('https://food-blog.fl-power.no/wp-json/wp/v2/posts?per_page=10&_embed');
             const posts = await response.json();
             displayPosts(posts);
         } catch (error) {
