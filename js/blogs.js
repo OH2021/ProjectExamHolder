@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const postsPerPage = 10;
     let currentPage = 1;
-    let totalPages = 1; // Assuming there's at least one page initially
+    let totalPages = 1;
 
     fetchPosts('https://food-blog.fl-power.no/wp-json/wp/v2/posts?page=1')
         .then(response => {
