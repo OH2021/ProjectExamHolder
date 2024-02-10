@@ -12,13 +12,19 @@ body {
     margin-top: 20px;
 }
 
-h1 {
+.header {
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-top: 100px;
     margin-bottom: 20px;
     margin-right: 490px;
+}
+
+.about-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
 
 .nav-buttons {
@@ -112,7 +118,7 @@ h1 {
 
 #blog-post-content {
     margin-bottom: 20px;
-    padding: 20px; /* Added padding */
+    padding: 20px;
     width: 80%;
     max-width: 800px;
     background-color: #f9f9f9;
@@ -123,8 +129,8 @@ h1 {
 
 #post-container {
     margin-bottom: 20px;
-    width: 80%; /* Adjusted width */
-    max-width: 800px; /* Added max-width for better responsiveness */
+    width: 80%;
+    max-width: 800px;
 }
 
 .post {
@@ -133,7 +139,7 @@ h1 {
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .post h2 {
@@ -203,7 +209,25 @@ h1 {
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    h1 {
+    .header {
         margin-right: 5%;
+    }
+
+    .about-header {
+        margin-right: 5%;;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #latest-posts {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .swiper-slide {
+        padding: 5px;
     }
 }
