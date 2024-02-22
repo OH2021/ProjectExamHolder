@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const images = blogPostContent.querySelectorAll('img');
             images.forEach(img => {
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+
                 img.addEventListener('click', function () {
                     const modal = document.createElement('div');
                     modal.classList.add('modal');

@@ -59,7 +59,7 @@ button {
 
 .website-buttons, .active-button {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
     border: 1px solid #333;
@@ -72,17 +72,50 @@ button {
 }
 
 .active-button {
-    background-color: #555;
-    border: 1px solid #555;
+    background-color: #777;
+    border: 1px solid #777;
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
-    form {
-        margin-bottom: 50px;
+@media screen and (max-width: 768px) {
+    .header,
+    .about-header {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 
-    h1 {
-        margin-right: 5%;
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        margin: 5px;
+    }
+
+    form {
+        max-width: 80%;
+        margin-bottom: 0px;
+    }
+
+    .buttons-container {
+        margin-top: 150px;
+    }
+
+    .website-buttons, .active-button {
+        display: inline-block;
+        padding: 20px 35px;
+        text-decoration: none;
+        background-color: #333;
+        color: white;
+        border: 1px solid #333;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .active-button {
+        background-color: #777;
+        border: 1px solid #777;
     }
 }

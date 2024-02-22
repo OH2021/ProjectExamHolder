@@ -44,6 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div>${post.content.rendered}</div>
             `;
             postContainer.appendChild(postElement);
+
+            const images = postElement.querySelectorAll('img');
+            images.forEach(image => {
+                image.style.maxWidth = '100%';
+                image.style.height = 'auto';
+            });
         });
     }
 
